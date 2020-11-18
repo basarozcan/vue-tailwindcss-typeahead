@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/basarozcan/vue-tailwindcss-typeahead">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">vue-tailwindcss-typeahead</h3>
@@ -14,7 +14,7 @@
     <a href="https://github.com/basarozcan/vue-tailwindcss-typeahead"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/basarozcan/vue-tailwindcss-typeahead">View Demo</a>
+    <a href="https://codesandbox.io/s/vue-tailwindcss-typeahead-8qetk">View Demo on Codesandbox</a>
     ·
     <a href="https://github.com/basarozcan/vue-tailwindcss-typeahead/issues">Report Bug</a>
     ·
@@ -30,7 +30,6 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
