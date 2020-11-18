@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/basarozcan/vue-tailwindcss-typeahead">
-    <img src="images/logo.png" alt="Logo">
+    <img src="https://github.com/basarozcan/vue-tailwindcss-typeahead/raw/master/images/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">vue-tailwindcss-typeahead</h3>
@@ -42,7 +42,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <p align="center">
-  <img src="images/component.png" alt="component" >
+  <img src="https://github.com/basarozcan/vue-tailwindcss-typeahead/raw/master/images/component.png" alt="component" >
 </p>
 I can't find any independent typeahead/autocomplete input component. All of them comes with UI libraries. 
 
