@@ -1,6 +1,6 @@
 {
   "name": "vue-tailwindcss-typeahead",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/vue-tailwindcss-typeahead.ssr.js",
   "browser": "dist/vue-tailwindcss-typeahead.esm.js",
