@@ -31,6 +31,8 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
+  * [Default Import](#default-import)
+  * [Browser](#browser)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -64,6 +66,32 @@ To get a local copy up and running follow these simple steps.
 npm install vue-tailwindcss-typeahead
 ```
 
+### Default Import
+
+Install the component:
+
+```javascript
+import Vue from 'vue'
+import VueTailwindcssTypeahead from '@/vue-tailwindcsscss-typeahead.vue';
+
+Vue.use(VueTailwindcssTypeahead)
+```
+
+
+### Browser
+
+```html
+<link rel="stylesheet" href="vue-tailwindcss-typeahead/dist/vue-tailwindcss-typeahead.css"/>
+
+<script src="vue.js"></script>
+<script src="vue-tailwindcss-typeahead/dist/vue-tailwindcss-typeahead.min.js"></script>
+```
+
+If Vue is detected, the plugin will be installed automatically. If not, install the component:
+
+```javascript
+Vue.use(VueTailwindcssTypeahead)
+```
 
 
 <!-- USAGE EXAMPLES -->
