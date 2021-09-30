@@ -155,7 +155,7 @@ Vue.use(VueTailwindcssTypeahead)
 |-----------------------|---------------------------------------------------------------------------------------------------------------|---------|
 | lists                 | pass an array of data. id and name attribute must be passed                                                   | Array   |
 | ignoredList           | selected item's id will be passed to this variable and this item will not be showed if user want to change it | Array   |
-| clearInoutWhenClicked | If this is set to true, input will be cleared after selection. Best for multiple selections                   | Boolean |
+| clearInputWhenClicked | If this is set to true, input will be cleared after selection. Best for multiple selections                   | Boolean |
 | inputClass            | Tailwindcss classes can be passed to change input's class                                                     | Array   |
 | placeholder           | placeholder text for input                                                                                    | String  |
 | @selected             | point method on parent component for custom operations                                                        |         |
