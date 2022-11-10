@@ -30,7 +30,7 @@ import ClickOutside from 'vue-click-outside'
 //import './css/tailwind.css' // Development only
 
 export default {
-  name: "VueTailwindcssTypeahead",
+  name: "VueTwTypeahead",
   directives: {
       ClickOutside
   },
@@ -68,7 +68,7 @@ export default {
   computed: {
       filteredList() {
         return this.searchItemList.filter((item) => {
-            return (item.name.toLowerCase().includes(this.search.toLowerCase()) && !this.checkIgnoreListItem(item.id));
+            return (item.name.toLowerCase().includes(this.search?.toLowerCase()) && !this.checkIgnoreListItem(item.id));
         });
       },
 
@@ -108,14 +108,16 @@ export default {
   created() {
       if(this.selectedData != 0){
           const selected = this.lists.filter((item) => {
-              if(item.id == this.selectedData){
+              if(item.id === this.selectedData){
                   return true
               }
               return false
           })
 
-          this.selectedItem = selected[0].name
-          this.search = selected[0].name
+          console.log('selected',selected);
+
+          this.selectedItem = selected[0]?.name
+          this.search = selected[0]?.name
       }
   },
 
