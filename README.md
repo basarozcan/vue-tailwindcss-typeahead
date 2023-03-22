@@ -68,31 +68,17 @@ npm install vue-tailwindcss-typeahead
 
 ### Default Import
 
-Install the component:
+Import component globally:
 
 ```javascript
-import Vue from 'vue'
-import VueTailwindcssTypeahead from '@/vue-tailwindcsscss-typeahead.vue';
+import {VueTwTypeahead} from '@/vue-tailwindcsscss-typeahead.vue';
+import { createApp } from "vue";
 
-Vue.use(VueTailwindcssTypeahead)
+import App from "./components/App.vue";
+const app = createApp(App)
+app.use(VueTwTypeahead)
+app.mount('#app');
 ```
-
-
-### Browser
-
-```html
-<link rel="stylesheet" href="vue-tailwindcss-typeahead/dist/vue-tailwindcss-typeahead.css"/>
-
-<script src="vue.js"></script>
-<script src="vue-tailwindcss-typeahead/dist/vue-tailwindcss-typeahead.min.js"></script>
-```
-
-If Vue is detected, the plugin will be installed automatically. If not, install the component:
-
-```javascript
-Vue.use(VueTailwindcssTypeahead)
-```
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -100,26 +86,25 @@ Vue.use(VueTailwindcssTypeahead)
 
 ### Call the component on parent
 ```javascript
-<vue-tailwindcsscss-typeahead 
+<VueTwTypeaheadd 
   :lists="list"
   @selected="selectedData"
   :ignoredList="selectedItemIds"
   :clearInputWhenClicked="false"
   :inputClass="['w-full','px-3','py-2','border','border-gray-400','rounded-lg','outline-none','focus:shadow-outline']"
   placeholder="Please write a city name">
-  </vue-tailwindcsscss-typeahead>
+  </VueTwTypeahead>
 ```
 
 ### Code on parent component
 ```javascript
 <script>
-  import Vue from 'vue';
-  import VueTailwindcssTypeahead from '@/vue-tailwindcsscss-typeahead.vue';
+  import {VueTwTypeahead} from '@/vue-tailwindcsscss-typeahead.vue';
 
-  export default Vue.extend({
+  export default {
     name: 'ParentComponent',
     components: {
-      VueTailwindcssTypeahead
+      VueTwTypeahead
     },
     data() {
       return {
@@ -146,7 +131,7 @@ Vue.use(VueTailwindcssTypeahead)
         this.selectedItem = value
       },
     },
-  });
+  }
 </script>
 ```
 
