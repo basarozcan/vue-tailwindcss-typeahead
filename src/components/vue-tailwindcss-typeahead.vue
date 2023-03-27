@@ -27,8 +27,6 @@
 <script>
 import ClickOutside from 'vue-click-outside'
 
-//import './css/tailwind.css' // Development only
-
 export default {
   name: "VueTwTypeahead",
   directives: {
@@ -113,8 +111,6 @@ export default {
               }
               return false
           })
-
-          console.log('selected',selected);
 
           this.selectedItem = selected[0]?.name
           this.search = selected[0]?.name
