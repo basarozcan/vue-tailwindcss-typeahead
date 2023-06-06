@@ -71,7 +71,7 @@ npm install vue-tailwindcss-typeahead
 Import component globally:
 
 ```javascript
-import {VueTwTypeahead} from '@/vue-tailwindcsscss-typeahead.vue';
+import { VueTwTypeahead } from '@/vue-tailwindcss-typeahead.vue';
 import { createApp } from "vue";
 
 import App from "./components/App.vue";
@@ -86,20 +86,21 @@ app.mount('#app');
 
 ### Call the component on parent
 ```javascript
-<VueTwTypeaheadd 
+<VueTwTypeahead 
   :lists="list"
   @selected="selectedData"
   :ignoredList="selectedItemIds"
   :clearInputWhenClicked="false"
   :inputClass="['w-full','px-3','py-2','border','border-gray-400','rounded-lg','outline-none','focus:shadow-outline']"
-  placeholder="Please write a city name">
-  </VueTwTypeahead>
+  placeholder="Please write a city name"
+>
+</VueTwTypeahead>
 ```
 
 ### Code on parent component
 ```javascript
 <script>
-  import {VueTwTypeahead} from '@/vue-tailwindcsscss-typeahead.vue';
+  import {VueTwTypeahead} from '@/vue-tailwindcss-typeahead.vue';
 
   export default {
     name: 'ParentComponent',
